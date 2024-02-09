@@ -1,0 +1,38 @@
+/* styles.css */
+body {
+   background-image: url('img/fondo.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll; /* Esta propiedad fija la imagen de fondo al visualizar */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+    
+}
+
+form {
+    text-align: center;
+    margin-top: 120vh;
+}
+
+label, input {
+    margin: 10px;
+}
+
+button {
+    padding: 10px;
+    cursor: pointer;
+}
+@media screen and (max-width: 600px) {
+    body {
+        background-position: center top; /* Centra la imagen de fondo en la parte superior en dispositivos más pequeños */
+    }
+
+    form {
+        margin-top: 70vh;
+    }
+}
