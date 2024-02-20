@@ -17,21 +17,21 @@ function checkPassword1() {
     const passwordInput1 = document.getElementById("password1").value;
     
     if (passwordInput1 === correctPassword1) {
-        window.location.href = "sqpr.html"; // Cambia a la página que desees
+        window.location.href = "spqr.html"; // Cambia a la página que desees
     } else {
         alert("X");
     }
 }
 
-const correctPassword2 = "Lepidus"; // Cambia esto a tu clave secreta
+const correctPassword2 = ""; // Cambia esto a tu clave secreta
 
 function checkPassword2() {
     const passwordInput2 = document.getElementById("password2").value;
     
     if (passwordInput2 === correctPassword2) {
-        window.location.href = ".html"; // Cambia a la página que desees
+        window.location.href = "spqr.html"; // Cambia a la página que desees
     } else {
-        alert("X");
+        alert("Incorrect");
     }
 }
 
