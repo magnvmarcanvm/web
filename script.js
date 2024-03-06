@@ -35,13 +35,61 @@ function checkPassword2() {
     }
 }
 
-const correctPasswordColum = "DXIVI"; // Cambia esto a tu clave secreta
+const correctPasswordCollum = "DXIVI"; // Cambia esto a tu clave secreta
 
-function checkPasswordColum() {
-    const passwordInputColum = document.getElementById("passwordColum").value;
+function checkPasswordCollum() {
+    const passwordInputCollum = document.getElementById("passwordCollum").value;
     
-    if (passwordInputColum === correctPasswordColum) {
-        alert("NUMERUS TURUS EST   V");
+    if (passwordInputCollum === correctPasswordCollum) {
+        window.location.href = "columna2.html"; // Cambia a la página que desees
+    } else {
+        alert("Incorrect");
+    }
+}
+
+const correctPasswordGeo4 = "ToletumPaxIuliaMalaca"; // Cambia esto a tu clave secreta
+
+function checkPasswordGeo4() {
+    const passwordInputGeo4 = document.getElementById("passwordGeo4").value;
+    
+    if (passwordInputGeo4 === correctPasswordGeo4) {
+        window.location.href = "geo6.html"; // Cambia a la página que desees
+    } else {
+        alert("Incorrect");
+    }
+}
+
+const correctPasswordGeo6 = "ALESSIA"; // Cambia esto a tu clave secreta
+
+function checkPasswordGeo6() {
+    const passwordInputGeo6 = document.getElementById("passwordGeo6").value;
+    
+    if (passwordInputGeo6 === correctPasswordGeo6) {
+        window.location.href = "geo5.html"; // Cambia a la página que desees
+    } else {
+        alert("Incorrect");
+    }
+}
+
+const correctPasswordGeo5 = "FARSALIA"; // Cambia esto a tu clave secreta
+
+function checkPasswordGeo5() {
+    const passwordInputGeo5 = document.getElementById("passwordGeo5").value;
+    
+    if (passwordInputGeo5 === correctPasswordGeo5) {
+        window.location.href = "geocasco.html"; // Cambia a la página que desees
+    } else {
+        alert("Incorrect");
+    }
+}
+
+const correctPasswordNudo = "AMPLEXUS"; // Cambia esto a tu clave secreta
+
+function checkPasswordNudo() {
+    const passwordInputNudo = document.getElementById("passwordNudo").value;
+    
+    if (passwordInputNudo === correctPasswordNudo) {
+        window.location.href = "nudo2.html"; // Cambia a la página que desees
     } else {
         alert("Incorrect");
     }

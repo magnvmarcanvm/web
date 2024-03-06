@@ -11,6 +11,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh; 
+   
     
 }
 
@@ -35,4 +36,186 @@ button {
     form {
         margin-top: 70vh;
     }
+}
+
+#menu {
+    display: flex;
+    overflow: scroll;
+    flex-wrap: nowrap; 
+    
+    
+}
+.elementos {
+    flex: 1 0 auto;
+    margin: 0 10px;
+    width: 30px;
+    height: 200px;
+}
+
+
+#menu img {
+    max-width: 100%; /* Hace que las imágenes sean responsivas y se ajusten al ancho del contenedor */
+    height: auto;
+}
+
+.contenedor {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto; /* Centrar el contenedor */
+  align-items: center;
+    justify-content: center;
+
+}
+
+.espacio {
+    height: 70vh /* Ajusta la altura según el espacio que desees */
+    /* Puedes agregar más estilos según tus necesidades */
+}
+button {
+    background-color: #f0f0f03f;
+}
+
+p {
+    text-align: center;
+   
+    text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.247);
+}
+
+#enlace{
+    text-align: center;
+
+}
+#enlace a{
+    text-decoration: none;
+    color: black;
+    border: 1px solid #000;
+    margin: 0;
+    font-size: large;
+}
+
+#imgcasco{
+    width: 100px;
+    height: 100px;
+    display: flex; /* Usa el modelo de caja flexible para facilitar el centrado */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center;
+    padding-left: 35%;
+    
+}
+
+#imgespadas{
+    width: 100px;
+    height: 100px;
+    display: flex; /* Usa el modelo de caja flexible para facilitar el centrado */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center;
+    padding-left: 35%;
+    
+}
+
+#imglaurel{
+    width: 100px;
+    height: 70px;
+    display: flex; /* Usa el modelo de caja flexible para facilitar el centrado */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center;
+    padding-left: 35%;
+    
+}
+
+#imgcolumna{
+    width: 70px;
+    height: 100px;
+    display: flex; /* Usa el modelo de caja flexible para facilitar el centrado */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center;
+    padding-left: 40%;
+    
+}
+
+#imggeo3{
+    width: 100px;
+    height: 100px;
+    display: flex; /* Usa el modelo de caja flexible para facilitar el centrado */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center;
+    padding-left: 37%;
+    
+}
+
+#imgserpiente{
+    width: 70px;
+    height: 120px;
+    display: flex; /* Usa el modelo de caja flexible para facilitar el centrado */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center;
+    padding-left: 40%;
+    
+}
+
+#imglira{
+    width: 80px;
+    height: 100px;
+    display: flex; /* Usa el modelo de caja flexible para facilitar el centrado */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center;
+    padding-left: 38%;
+    
+}
+
+#imgaguila{
+    width: 300px;
+    height: 100px;
+    display: flex; /* Usa el modelo de caja flexible para facilitar el centrado */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center;
+    padding-left: 5%;
+    
+}
+
+#imgspr{
+    width: 150px;
+    height: 40px;
+    display: flex; /* Usa el modelo de caja flexible para facilitar el centrado */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center;
+    padding-left: 30%;
+    
+}
+
+#imggeo4{
+    width: 50px;
+    height: 50px;
+    display: flex; /* Usa el modelo de caja flexible para facilitar el centrado */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center;
+    padding-left: 30%;
+}
+
+#imggeomix{
+    width: 400px;
+    height: 90px;
+    display: flex; /* Usa el modelo de caja flexible para facilitar el centrado */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center;
+    padding-left: 0%;
+    
+}
+
+#imggeo41{
+    width: 80px;
+    height: 80px;
+    display: flex; /* Usa el modelo de caja flexible para facilitar el centrado */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center;
+   
+    padding-left: 37%;
+}
+#imggeofinal{
+    width: 500px;
+    height: 120px;
+    display: flex; /* Usa el modelo de caja flexible para facilitar el centrado */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center;
+    padding-left: 20%;
 }

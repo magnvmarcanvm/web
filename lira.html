@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Página Principal</title>
+    <style>
+        #textoOculto {
+            display: none; /* Inicia oculto */
+            margin-top: 10px; /* Agrega un espacio arriba para mejorar la apariencia */
+            background-color: rgba(255, 255, 255, 0.301);
+            
+            
+        }
+    </style>
+
+</head>
+<body>
+    <div class="contenedor">
+        <!-- Caja vacía para generar espacio -->
+        <div class="espacio"></div>
+        
+        <!-- Otro contenido dentro del contenedor -->
+        <img id="imglira" src="img/lira.png" alt="">
+        <p id="enlace"><a href="main.html">INITIVM</a></p>
+    </div>
+    
+    <button onclick="mostrarTexto()">INDICIVM</button>
+    <div id="textoOculto">
+        <p>NON SVNT DATA</p>
+    </div>
+
+    <script>
+        function mostrarTexto() {
+            var textoOculto = document.getElementById("textoOculto");
+            if (textoOculto.style.display === "none") {
+                textoOculto.style.display = "block"; // Muestra el texto al hacer clic
+            } else {
+                textoOculto.style.display = "none"; // Oculta el texto si ya está visible
+            }
+        }
+    </script>
+   
+
+    <script src="script.js"></script>
+</body>
+</html>
