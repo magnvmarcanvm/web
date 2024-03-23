@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comprobador de Palabras</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        img {
+            width: 80px;
+            height: 80px;
+            margin: 10px;
+        }
+       
+    </style>
+</head>
+<body>
+
+<div id="contenedor-imagenes">
+    <!-- Coloca aquí las URLs de las imágenes PNG y las palabras correctas -->
+    <div>
+        <img src="img/sol.png" alt="Imagen 1">
+        <input type="text" size="2" id="palabra1" autoComplete="off">
+        <button onclick="comprobar('palabra1', 'sol')">DEMOSNTRARE</button>
+        <p id="resultado1"></p>
+    </div>
+
+    <div>
+        <img src="img/casco.png" alt="Imagen 2">
+        <input type="text" size="2" id="palabra2" autoComplete="off">
+        <button onclick="comprobar('palabra2', 'casco')">DEMOSNTRARE</button>
+        <p id="resultado2"></p>
+    </div>
+
+    <div>
+        <img src="img/espadas.png" alt="Imagen 3">
+        <input type="text" size="2" id="palabra3"  autoComplete="off">
+        <button onclick="comprobar('palabra3', '3')">DEMOSNTRARE</button>
+        <p id="resultado3"></p>
+    </div>
+    <div>
+        <img src="img/laurel.png" alt="Imagen 4">
+        <input type="text" size="2" id="palabra4" autoComplete="off">
+        <button onclick="comprobar('palabra4', '4')">DEMOSNTRARE</button>
+        <p id="resultado4"></p>
+    </div>
+    <div>
+        <img src="img/columna.png" alt="Imagen 5" id="colcom">
+        <input type="text" size="2" id="palabra5"  autoComplete="off">
+        <button onclick="comprobar('palabra5', '5')">DEMOSNTRARE</button>
+        <p id="resultado5"></p>
+    </div>
+    <div>
+        <img src="img/SPQR.png" alt="Imagen 6" id="spqrcom">
+        <input type="text" size="2" id="palabra6"  autoComplete="off">
+        <button onclick="comprobar('palabra6', '6')">DEMOSNTRARE</button>
+        <p id="resultado6"></p>
+    </div>
+    <div>
+        <img src="img/serpiente.png" alt="Imagen 7" id="serpcom">
+        <input type="text" size="2" id="palabra7"  autoComplete="off">
+        <button onclick="comprobar('palabra7', '7')">DEMOSNTRARE</button>
+        <p id="resultado7"></p>
+    </div>
+    <div>
+        <img src="img/nudo.png" alt="Imagen 8">
+        <input type="text" size="2" id="palabra8"  autoComplete="off">
+        <button onclick="comprobar('palabra8', '8')">DEMOSNTRARE</button>
+        <p id="resultado8"></p>
+    </div>
+    <div>
+        <img src="img/lira.png" alt="Imagen 9" id="liracom">
+        <input type="text" size="2" id="palabra9"  autoComplete="off">
+        <button onclick="comprobar('palabra9', '9')">DEMOSNTRARE</button>
+        <p id="resultado9"></p>
+    </div>
+    <div>
+        <img src="img/aguila.png" alt="Imagen 10" id="aguilacom">
+        <input type="text" size="2" id="palabra10" autoComplete="off">
+        <button onclick="comprobar('palabra10', '1')">DEMOSNTRARE</button>
+        <p id="resultado10"></p>
+    </div>
+    <!-- Agrega más imágenes según sea necesario -->
+</div>
+
+<script>
+    function comprobar(inputId, palabraCorrecta) {
+        const respuestaUsuario = document.getElementById(inputId).value.toUpperCase();
+        const esCorrecto = respuestaUsuario === palabraCorrecta;
+
+        const resultadoId = "resultado" + inputId.charAt(inputId.length - 1);
+
+        if (esCorrecto) {
+            document.getElementById(resultadoId).innerText = "VERVM";
+        } else {
+            document.getElementById(resultadoId).innerText = "ERROREM";
+        }
+    }
+</script>
+
+</body>
+</html>

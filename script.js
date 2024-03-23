@@ -41,7 +41,7 @@ function checkPasswordCollum() {
     const passwordInputCollum = document.getElementById("passwordCollum").value;
     
     if (passwordInputCollum === correctPasswordCollum) {
-        window.location.href = "columna2.html"; // Cambia a la página que desees
+        window.location.href = "columna2 .html"; // Cambia a la página que desees
     } else {
         alert("Incorrect");
     }
