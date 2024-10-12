@@ -80,7 +80,22 @@ p {
    
     text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.247);
 }
+#enlace1 a {
+    color: black; /* Establece el color del texto del enlace */
+    text-decoration: none; /* Elimina la decoración del texto (subrayado) */
+    font-size: 66px;
+    color: black;
+    border: 3px solid #000;
+    margin: 0;
+}
 
+#enlace1 a:hover {
+    color: darkgray; /* Cambia el color cuando el mouse está sobre el enlace */
+}
+
+#enlace1 a:visited {
+    color: black; /* Establece el color del enlace visitado */
+}
 #enlace{
     text-align: center;
 

@@ -106,3 +106,15 @@ function checkPasswordIdus() {
         alert("Incorrect");
     }
 }
+
+const correctPasswordFinis = "DXVIIIXVIIIDCIVL"; // Cambia esto a tu clave secreta
+
+function checkPasswordFinis() {
+    const passwordInputFinis = document.getElementById("passwordFinis").value; // Asegúrate de que el ID coincida
+    
+    if (passwordInputFinis === correctPasswordFinis) {
+        window.location.href = "finis2.html"; // Cambia a la página que desees
+    } else {
+        alert("Incorrect");
+    }
+}

@@ -71,7 +71,7 @@
     <div>
         <img src="img/lira.png" alt="Imagen 9" id="liracom">
         <input type="text" size="2" id="palabra9"  autoComplete="off">
-        <button onclick="comprobar('palabra9', '')">DEMOSTRARE</button>
+        <button onclick="comprobar('palabra9', 'IV')">DEMOSTRARE</button>
         <p id="resultado9"></p>
     </div>
     <div>
@@ -81,6 +81,12 @@
         <p id="resultado10"></p>
     </div>
     <!-- Agrega más imágenes según sea necesario -->
+</div>
+
+</div>
+<!-- Botón para comprobar todas las respuestas -->
+<button onclick="comprobarTodo()">COMPROBAR TODO</button>
+<p id="resultadoGeneral"></p>
 </div>
 
 <script>
@@ -97,6 +103,31 @@
             document.getElementById(resultadoId).innerText = "ERROREM";
         }
     }
+
+    function comprobarTodo() {
+        const respuestasCorrectas = ['D', 'X', 'VII', 'IX', 'VIII', 'I', 'D', 'C', 'IV', 'L'];
+        let todasCorrectas = true;
+
+        for (let i = 1; i <= 10; i++) {
+            const inputId = 'palabra' + i;
+            const respuestaUsuario = document.getElementById(inputId).value.toUpperCase();
+            const palabraCorrecta = respuestasCorrectas[i - 1].toUpperCase();
+
+            if (respuestaUsuario !== palabraCorrecta) {
+                todasCorrectas = false;
+                break; // Si alguna respuesta es incorrecta, no necesitamos seguir comprobando
+            }
+        }
+
+        const resultadoGeneral = document.getElementById("resultadoGeneral");
+        if (todasCorrectas) {
+            resultadoGeneral.innerText = "TODAS CORRECTAS!";
+            window.location.href = "finis2.html"; // Redirigir a otra página
+        } else {
+            resultadoGeneral.innerText = "AL MENOS UNA INCORRECTA.";
+        }
+    }
+
 </script>
 
 </body>
