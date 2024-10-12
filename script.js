@@ -95,3 +95,14 @@ function checkPasswordNudo() {
     }
 }
 
+const correctPasswordIdus = "IdusMartii"; // Cambia esto a tu clave secreta
+
+function checkPasswordIdus() {
+    const passwordInputIdus = document.getElementById("passwordIdus").value; // Asegúrate de que el ID coincida
+    
+    if (passwordInputIdus === correctPasswordIdus) {
+        window.location.href = "spqr3.html"; // Cambia a la página que desees
+    } else {
+        alert("Incorrect");
+    }
+}

@@ -219,3 +219,28 @@ p {
     align-items: center;
     padding-left: 20%;
 }
+
+#colcom {
+    height: 100px;
+    width: 50px;
+}
+
+#spqrcom {
+    height: 40px;
+    width: 80px;
+}
+
+#serpcom{
+    height: 80px;
+    width: 50px;
+}
+
+#liracom{
+    height: 80px;
+    width: 70px;
+}
+
+#aguilacom{
+    height: 60px;
+    width: 100px;
+}
